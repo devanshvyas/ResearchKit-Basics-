@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JQF-ND-ZCV">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Profile-->
+        <scene sceneID="c60-ab-eCb">
+            <objects>
+                <viewController id="rel-sC-EGN" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QJL-wK-1pv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Paz-SR-TCY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" id="7wU-LS-5Vc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZcW-gC-9Q9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1132" y="635"/>
+        </scene>
+        <!--Web View-->
+        <scene sceneID="PYf-ij-3QC">
+            <objects>
+                <viewController id="ukl-Zk-aYd" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eqw-0o-D2w">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="n0G-f1-TAH"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Web View" id="l7Q-a3-bw2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u1c-Mo-6sn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-358" y="112"/>
+        </scene>
+        <!--Survey-->
+        <scene sceneID="G1d-6w-s9W">
+            <objects>
+                <viewController id="lsk-JN-KAW" customClass="SurveyVC" customModule="ResearchKit_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3nB-0a-3X0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="68T-5j-Wz1">
+                                <rect key="frame" x="140" y="143.5" width="95" height="380"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Surveys" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jYf-iW-8lM">
+                                        <rect key="frame" x="17" y="0.0" width="61" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xNd-H2-W7q">
+                                        <rect key="frame" x="6" y="50" width="83" height="30"/>
+                                        <state key="normal" title="Sleep Study"/>
+                                        <connections>
+                                            <action selector="SleepStudyPressed:" destination="lsk-JN-KAW" eventType="touchUpInside" id="aee-An-oTM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JYj-gE-zgL">
+                                        <rect key="frame" x="9" y="100" width="77" height="30"/>
+                                        <state key="normal" title="Walk Study"/>
+                                        <connections>
+                                            <action selector="WalkStudyPressed:" destination="lsk-JN-KAW" eventType="touchUpInside" id="9sh-W4-k7X"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jed-B3-DNw">
+                                        <rect key="frame" x="7.5" y="150" width="80" height="30"/>
+                                        <state key="normal" title="Work Study"/>
+                                        <connections>
+                                            <action selector="WorkStudyPressed:" destination="lsk-JN-KAW" eventType="touchUpInside" id="VNx-uQ-V5T"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Active Tasks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aZl-Dw-1nn">
+                                        <rect key="frame" x="0.0" y="200" width="95" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DeI-EH-aVX">
+                                        <rect key="frame" x="20" y="250" width="55" height="30"/>
+                                        <state key="normal" title="Tapping"/>
+                                        <connections>
+                                            <action selector="TappingActivity:" destination="lsk-JN-KAW" eventType="touchUpInside" id="YI5-Ja-8kO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rlv-70-5TR">
+                                        <rect key="frame" x="24" y="300" width="47" height="30"/>
+                                        <state key="normal" title="Spatial"/>
+                                        <connections>
+                                            <action selector="SpatialActivity:" destination="lsk-JN-KAW" eventType="touchUpInside" id="ovk-ZF-hKA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JuH-kL-vqP">
+                                        <rect key="frame" x="19" y="350" width="57" height="30"/>
+                                        <state key="normal" title="Addition"/>
+                                        <connections>
+                                            <action selector="PSATPressed:" destination="lsk-JN-KAW" eventType="touchUpInside" id="Hvy-Tz-TZH"/>
+                                            <action selector="SpatialActivity:" destination="lsk-JN-KAW" eventType="touchUpInside" id="KgZ-vB-LdJ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="68T-5j-Wz1" firstAttribute="centerX" secondItem="3nB-0a-3X0" secondAttribute="centerX" id="Cpe-Wc-09M"/>
+                            <constraint firstItem="68T-5j-Wz1" firstAttribute="centerY" secondItem="3nB-0a-3X0" secondAttribute="centerY" id="p5z-S8-fWA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Paq-yq-j91"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Survey" id="zAv-QV-Vcl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GQV-kg-Yxv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-358" y="-553"/>
+        </scene>
+        <!--ConsentVC-->
+        <scene sceneID="SM8-LM-iP6">
+            <objects>
+                <viewController id="JQF-ND-ZCV" customClass="ConsentVC" customModule="ResearchKit_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pWc-RF-nTX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W7C-d3-fBg">
+                                <rect key="frame" x="74" y="103.5" width="227" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MfS-sS-GnH">
+                                <rect key="frame" x="96.5" y="309.5" width="183" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Enter Consent"/>
+                                <connections>
+                                    <action selector="consentPressed:" destination="JQF-ND-ZCV" eventType="touchUpInside" id="wYd-E1-wqe"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DQF-ep-qqk">
+                                <rect key="frame" x="121.5" y="414" width="132" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="View Consent"/>
+                                <connections>
+                                    <action selector="viewConsent:" destination="JQF-ND-ZCV" eventType="touchUpInside" id="NRP-BS-P9h"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xoM-qe-5of">
+                                <rect key="frame" x="126" y="484" width="123" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Start Survey!"/>
+                                <connections>
+                                    <action selector="toSurvey:" destination="JQF-ND-ZCV" eventType="touchUpInside" id="yTV-po-Fx8"/>
+                                    <action selector="viewConsent:" destination="JQF-ND-ZCV" eventType="touchUpInside" id="Uhe-JR-vDp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="DQF-ep-qqk" firstAttribute="centerY" secondItem="pWc-RF-nTX" secondAttribute="centerY" constant="100" id="9N1-PQ-3uX"/>
+                            <constraint firstItem="W7C-d3-fBg" firstAttribute="centerX" secondItem="pWc-RF-nTX" secondAttribute="centerX" id="NgI-lU-gqe"/>
+                            <constraint firstItem="DQF-ep-qqk" firstAttribute="centerX" secondItem="pWc-RF-nTX" secondAttribute="centerX" id="Ppo-Fa-gUH"/>
+                            <constraint firstItem="xoM-qe-5of" firstAttribute="centerX" secondItem="pWc-RF-nTX" secondAttribute="centerX" id="R5z-9b-j5p"/>
+                            <constraint firstItem="MfS-sS-GnH" firstAttribute="centerY" secondItem="pWc-RF-nTX" secondAttribute="centerY" id="Sh5-bk-rX9"/>
+                            <constraint firstItem="W7C-d3-fBg" firstAttribute="centerY" secondItem="pWc-RF-nTX" secondAttribute="centerY" constant="-200" id="bSo-A1-SQk"/>
+                            <constraint firstItem="MfS-sS-GnH" firstAttribute="centerX" secondItem="pWc-RF-nTX" secondAttribute="centerX" id="mWJ-Wr-ELU"/>
+                            <constraint firstItem="xoM-qe-5of" firstAttribute="top" secondItem="DQF-ep-qqk" secondAttribute="bottom" constant="31" id="tSB-Hi-uYc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5wk-O8-8G5"/>
+                    </view>
+                    <connections>
+                        <outlet property="btn" destination="DQF-ep-qqk" id="hUD-gc-uKI"/>
+                        <outlet property="survey" destination="xoM-qe-5of" id="CRG-Ti-gDr"/>
+                        <segue destination="xFw-8P-ezy" kind="show" identifier="toTabBar" id="Vo3-lB-FLg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dgQ-wR-nOS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2097" y="-236"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="tGW-DW-QfJ">
+            <objects>
+                <tabBarController id="xFw-8P-ezy" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ppI-Wz-Unc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="lsk-JN-KAW" kind="relationship" relationship="viewControllers" id="et2-gv-RiF"/>
+                        <segue destination="ukl-Zk-aYd" kind="relationship" relationship="viewControllers" id="b39-uO-Fat"/>
+                        <segue destination="rel-sC-EGN" kind="relationship" relationship="viewControllers" id="RNX-bE-fI6"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8pP-F2-c17" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1310" y="-221"/>
+        </scene>
+    </scenes>
+</document>
